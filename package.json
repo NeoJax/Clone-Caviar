@@ -1,0 +1,22 @@
+{
+  "name": "clone-caviar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "caviar.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoJax/Clone-Caviar.git"
+  },
+  "author": "Johnathon Lubaway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeoJax/Clone-Caviar/issues"
+  },
+  "homepage": "https://github.com/NeoJax/Clone-Caviar#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

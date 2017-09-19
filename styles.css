@@ -1,3 +1,4 @@
+/* general css */
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   display: flex;
@@ -12,8 +13,10 @@ body {
 button {
   border: 0;
   background: transparent;
+  text-align: center;
 }
 
+/* header */
 .profile-img {
   position: absolute;
   top: 4%;
@@ -43,6 +46,7 @@ button {
   right: 10%;
 }
 
+/* header img */
 .header-img {
   height: 170%;
   background-image: url("https://img.trycaviar.com/x7pgux2UGo3J3wY_QrD3lITEmnk=/1680x1120/https://s3.amazonaws.com/trycaviar.com/offers/151/9049.jpg");
@@ -70,6 +74,7 @@ button {
   z-index: 2;
 }
 
+/* delivery header */
 .delivery {
   display: inline-block;
   vertical-align: top;
@@ -115,6 +120,7 @@ button {
   left: 0;
 }
 
+/* menu */
 .menu {
   top: 30em;
   left: 0;
@@ -124,50 +130,79 @@ button {
   width: 100%;
 }
 
-.footer {
+/* footer #2d3c48 */
+.footer-setup {
   background-color: #2d3c48;
-  height: 30em;
+  height: 25em;
   width: 100%;
   color: white;
   padding-top: 5%;
+  display: flex;
+  justify-content: center;
 }
 
+.footer {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between center;
+  align-content: stretch;
+  height: 100%;
+  width: 75%;
+}
+
+/* footer left */
 .footer-location {
-  position: relative;
-  float: left;
-  left: 20%;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.footer-image {
+  height: 150px;
+  width: 200px;
+  border-radius: 3%;
+}
+
+/* footer middle */
 .footer-phone {
-  position: relative;
-  float: none;
-  left: 38%;
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
   font-size: 14pt;
 }
 
+.phone-2nd-row {
+  margin-top: 5%;
+  padding-top: 10%;
+  color: gray;
+  border-radius: 5%;
+}
+
+/* footer right */
 .footer-misc {
-  position: relative;
-  left: 60%;
-  background-color: #2d3c48;
-}
-
-.footer-info {
-  position: absolute;
+  flex: 1 0 0;
   display: flex;
-  bottom: -60%;
-  left: 13%;
-  width: 75%;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
 }
 
-.footer-footer {
-  position: relative;
-  top: 70%;
-  left: 13%;
-  border-top: 1px solid lightgray;
-  width: 75%;
-  text-align: center;
+.footer-button {
+  height: 22%;
+  width: 70%;
+  border: 2px gray solid;
+  color: white;
+}
+
+/* footer middle bottom */
+.footer-info {
+  flex-shrink: 0 10 10;
+  display: flex;
+  width: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  align-self: center;
+  justify-content: space-between;
 }
 
 .bird {
@@ -175,6 +210,7 @@ button {
   height: 24px;
   width: 24px;
   margin: 1%;
+  background-size: contain;
 }
 
 .camera {
@@ -182,6 +218,7 @@ button {
   height: 24px;
   width: 24px;
   margin: 1%;
+  background-size: contain;
 }
 
 .book {
@@ -189,8 +226,17 @@ button {
   height: 24px;
   width: 24px;
   margin: 1%;
+  background-size: contain;
 }
 
 .flex-item {
-  padding: 1.5%;
+  padding: 1.95%;
+}
+
+/* footer bottom */
+.footer-footer {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  text-align: center;
+  align-self: auto;
 }
