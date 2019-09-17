@@ -94,6 +94,29 @@ button {
   left: 10%;
 }
 
+#hrsMdlClk {
+  color: #fc8c14;
+}
+
+#hoursModal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.hours {
+  width: 60%;
+  height: 30%;
+  background-color: white;
+  margin-top: 15%;
+  margin-left: 20%;
+}
+
 .del-btn {
   position: relative;
   top: -50%;
@@ -122,12 +145,104 @@ button {
 
 /* menu */
 .menu {
+  display: inline-block;
   top: 30em;
-  left: 0;
   background-color: #f9f9f9;
   z-index: 1;
-  height: 30em;
+}
+
+.menu-padding {
+  padding: 0 4% 0 20%;
+}
+
+.menu-header {
+  position: relative;
+  color: lightgrey;
+  border-top: lightgrey solid 1px;
+  width: 74%;
+  font-size: 12px;
+  left: 1%;
+  padding-top: 1%;
+}
+
+.menu-btn {
+  text-align: left;
+  width: 25%;
+}
+
+.menu-btn:hover .btn-overlay {
+  opacity: 0.5;
+}
+
+.btn-overlay {
+  display: none;
+  position: static;
+  background-color: #fc8c14;
+  opacity: 0;
+  z-index: 2;
+  height: 10em;
+  width: 15em;
+}
+
+#menuModal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+  height: 100%;
+}
+
+.menu-Mdl {
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+#pop1M {
+  display: none;
+}
+
+#pop2M {
+  display: none;
+}
+
+#pop3M {
+  display: none;
+}
+
+#pop4M {
+  display: none;
+}
+
+#sec1M {
+  display: none;
+}
+
+#sec2M {
+  display: none;
+}
+
+#sec3M {
+  display: none;
+}
+
+.menu-img {
+  left: 0;
+  height: 10em;
+}
+
+.menu-food {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menu-price {
+  color: #fc8c14;
 }
 
 /* footer #2d3c48 */

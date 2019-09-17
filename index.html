@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>trycaviar.com</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="caviar.js"></script>
 </head>
 <body>
   <div>
@@ -23,12 +25,34 @@
   </div>
   <div class = "delivery">
     <div class = "del-txt"><span style = "font-weight: bold; color: #fc8c14">Delivery</span> within 38-49 min <br>
-      Open Now (View Available Hours)
+      Open Now (<a href="javascript:void(0)" id="hrsMdlClk">View Available Hours</a>)
     </div>
     <button class = "del-btn"><img class = "btn-img" src = "./images/two-people.png"><span class = "btn-txt">Start Group Order</span></button>
   </div>
-  <div class = "menu">
-    <h3 style = "color: #58c94a; text-align: center">Orders over $350 require 24 hours advanced notice.</h3>
+  <div class="menu">
+      <h3 style="color: #58c94a; text-align: center">Orders over $350 require 24 hours advanced notice.</h3>
+      <div class="menu-padding">
+        <div class="menu-poplr">
+        <p class="menu-header">POPULAR</p>
+        <button id="pop1" class="menu-btn"><img class="menu-img btn-overlay" src="https://img.trycaviar.com/-xcqZTu1821FAa80VEUvvJHb330=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9041.jpg"><span class="menu-food">Classic Mac</span><br>
+        Homeroom’s super creamy and extra cheesy remake of the all-cheddar mac you ate as a kid.<br><span class="menu-price">11.75</span></button>
+        <button id="pop2" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/aYETAvPu24hjhyc5EYdb6B1wDsk=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9048.jpg"><span class="menu-food">Gilroy Garlic Mac</span><br>
+        Creamy gouda, sharp pecorino, and just the right amount of garlic.<br><span class="menu-price">12.90</span></button>
+        <button id="pop3" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/kYy7CeXogeB1i25dCw0vDjNEIOU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9049.jpg"><span class="menu-food">Mexican Mac</span><br>
+        Niman Ranch chorizo, jack cheese, homemade chipotle adobo sauce, and cilantro, served with a wedge of lime.<br><span class="menu-price">13.85</span></button><br>
+        <button id="pop4" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/m5lLB-JY9wQWWTx7VPUCIXrWjpM=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/9042.jpg"><span class="menu-food">Smoky Bacon Mac</span><br>
+        Rich and bold with smoked cheddar, jack cheese, and bacon.<br><span class="menu-price">13.85</span></button>
+      </div>
+      <div class="menu-secret">
+        <p class="menu-header">SECRET MENU</p>
+        <button id="sec1" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/TJBuzy6bs7K-nZ80hrh2OT7Hr8Y=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156132-201608191857.jpg"><span class="menu-food">Secret Menu: Breakfast Mac</span><br>
+        Caviar exclusive. Breakfast Mac: classic mac with bacon and egg with side of a biscuit.<br><span class="menu-price">19.45</span></button>
+        <button id="sec2" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/F63v80PwCEFihW5E_OPszkmnzvw=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156336-201608191857.jpg"><span class="menu-food">Secret Menu: Eggy Bacon Sprouts</span><br>
+        Caviar Exclusive. Roasted brussels sprouts with bacon, topped with a fried egg.<br><span class="menu-price">9.80</span></button>
+        <button id="sec3" class="menu-btn"><img class="menu-img" src="https://img.trycaviar.com/moE-oRIOGim0-0uFHb5AI-xB7PU=/350x233/https://s3.amazonaws.com/trycaviar.com/offers/151/156133-201608191857.jpg"><span class="menu-food">Secret Menu: (Vegetarian) Eggy Sprouts</span><br>
+        Caviar exclusive. Roasted brussels sprouts, topped with a fried egg.<br><span class="menu-price">8.60</span></button>
+      </div>
+    </div>
   </div>
   <div class = "footer-setup">
     <div class = "footer">
@@ -45,6 +69,36 @@
       <span class = "flex-item">Terms</span>
       <button class = "bird flex-item"></button><button class = "camera flex-item"></button><button class = "book flex-item"></button></div>
       <div class = "footer-footer">@ 2012 - 2017 Square Inc.</div>
+    </div>
+  </div>
+  <div id="hoursModal">
+    <div class="hours">
+      Available Hours
+    </div>
+  </div>
+  <div id="menuModal">
+    <div class="menu-Mdl">
+      <div id="pop1M">
+        Hours de vours 1st
+      </div>
+      <div id="pop2M">
+        blah 2nd
+      </div>
+      <div id="pop3M">
+        oh man 3rd
+      </div>
+      <div id="pop4M">
+        4th on 4th
+      </div>
+      <div id="sec1M">
+        1st secret
+      </div>
+      <div id="sec2M">
+        2nd of many secrets
+      </div>
+      <div id="sec3M">
+        3rd secret of secrets
+      </div>
     </div>
   </div>
 </body>
